@@ -9,8 +9,21 @@ body{
     align-items: center;
     justify-content: center;
     color: #fff;
+    text-align: center;
+    width: 100vw;
 }
 #clock{
     font-weight: 300px;
     font-size: 120px;
+    text-align: center;
+}
+#date{
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    #clock{
+        font-weight: 300px;
+        font-size: 75px;
+    }
 }
