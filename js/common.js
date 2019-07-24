@@ -24,6 +24,23 @@ function colorClock(){
 
     clock.textContent = clockString;
     color.textContent = colorString;
+
+    var options = {
+        era: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        weekday: 'long',
+        timezone: 'UTC',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric'
+      };
+
+
+    time = time.toLocaleString("ru", options).toString();
+    time = time[0].toUpperCase() + time.slice(1);
+
     date.textContent = time;
 
     clockWrapper.style.background = colorString;
