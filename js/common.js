@@ -26,7 +26,6 @@ function colorClock(){
     color.textContent = colorString;
 
     var options = {
-        era: 'long',
         year: 'numeric',
         month: 'long',
         day: 'numeric',
